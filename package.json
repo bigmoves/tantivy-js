@@ -12,8 +12,7 @@
   },
   "files": [
     "src",
-    "types",
-    "tantivy-js-core.node"
+    "*.node"
   ],
   "napi": {
     "name": "tantivy-js-core",
@@ -32,7 +31,8 @@
     "build:debug": "napi build --platform --cargo-cwd ./crates/tantivy-js-core",
     "test": "vitest",
     "lint": "oxlint src test",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "napi prepublish --skip-gh-release"
   },
   "keywords": [
     "search",
