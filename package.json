@@ -1,6 +1,6 @@
 {
   "name": "@bigmoves/tantivy-js",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Full-text search powered by tantivy, compiled to native Node.js addon",
   "type": "module",
   "main": "src/index.js",
@@ -53,9 +53,9 @@
     "vitest": "^2.1.0"
   },
   "optionalDependencies": {
-    "@bigmoves/tantivy-js-darwin-x64": "0.1.3",
-    "@bigmoves/tantivy-js-darwin-arm64": "0.1.3",
-    "@bigmoves/tantivy-js-linux-x64-gnu": "0.1.3",
-    "@bigmoves/tantivy-js-linux-arm64-gnu": "0.1.3"
+    "@bigmoves/tantivy-js-darwin-x64": "0.1.4",
+    "@bigmoves/tantivy-js-darwin-arm64": "0.1.4",
+    "@bigmoves/tantivy-js-linux-x64-gnu": "0.1.4",
+    "@bigmoves/tantivy-js-linux-arm64-gnu": "0.1.4"
   }
 }

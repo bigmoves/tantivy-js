@@ -1,6 +1,6 @@
 {
   "name": "@bigmoves/tantivy-js-darwin-arm64",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "os": [
     "darwin"
   ],
@@ -20,6 +20,10 @@
     "napi"
   ],
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bigmoves/tantivy-js"
+  },
   "publishConfig": {
     "access": "public"
   }
