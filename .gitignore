@@ -1,0 +1,14 @@
+node_modules/
+target/
+pkg/
+
+# Build artifacts
+*.node
+*.wasm
+/index.js
+/index.d.ts
+
+# Generated types (regenerate with tsc)
+types/
+
+.DS_Store

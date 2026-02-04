@@ -1,0 +1,52 @@
+{
+  "name": "@bigmoves/tantivy-js",
+  "version": "0.1.0",
+  "description": "Full-text search powered by tantivy, compiled to native Node.js addon",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": {
+    ".": {
+      "types": "./types/index.d.ts",
+      "import": "./src/index.js"
+    }
+  },
+  "files": [
+    "src",
+    "types",
+    "tantivy-js-core.node"
+  ],
+  "napi": {
+    "name": "tantivy-js-core",
+    "triples": {
+      "defaults": false,
+      "additional": [
+        "x86_64-apple-darwin",
+        "aarch64-apple-darwin",
+        "x86_64-unknown-linux-gnu",
+        "aarch64-unknown-linux-gnu"
+      ]
+    }
+  },
+  "scripts": {
+    "build": "napi build --platform --release --cargo-cwd ./crates/tantivy-js-core",
+    "build:debug": "napi build --platform --cargo-cwd ./crates/tantivy-js-core",
+    "test": "vitest",
+    "lint": "oxlint src test",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "search",
+    "tantivy",
+    "full-text",
+    "native",
+    "napi"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@napi-rs/cli": "^2.18.0",
+    "@types/node": "^25.2.0",
+    "oxlint": "^0.16.0",
+    "typescript": "^5.7.0",
+    "vitest": "^2.1.0"
+  }
+}
