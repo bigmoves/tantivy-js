@@ -1,0 +1,29 @@
+{
+  "name": "@bigmoves/tantivy-js-linux-x64-gnu",
+  "version": "0.1.3",
+  "os": [
+    "linux"
+  ],
+  "cpu": [
+    "x64"
+  ],
+  "main": "tantivy-js-core.linux-x64-gnu.node",
+  "files": [
+    "tantivy-js-core.linux-x64-gnu.node"
+  ],
+  "description": "Full-text search powered by tantivy, compiled to native Node.js addon",
+  "keywords": [
+    "search",
+    "tantivy",
+    "full-text",
+    "native",
+    "napi"
+  ],
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "libc": [
+    "glibc"
+  ]
+}
