@@ -1,6 +1,6 @@
 {
   "name": "@bigmoves/tantivy-js",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Full-text search powered by tantivy, compiled to native Node.js addon",
   "type": "module",
   "main": "src/index.js",
@@ -42,11 +42,20 @@
     "napi"
   ],
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "devDependencies": {
     "@napi-rs/cli": "^2.18.0",
     "@types/node": "^25.2.0",
     "oxlint": "^0.16.0",
     "typescript": "^5.7.0",
     "vitest": "^2.1.0"
+  },
+  "optionalDependencies": {
+    "@bigmoves/tantivy-js-darwin-x64": "0.1.1",
+    "@bigmoves/tantivy-js-darwin-arm64": "0.1.1",
+    "@bigmoves/tantivy-js-linux-x64-gnu": "0.1.1",
+    "@bigmoves/tantivy-js-linux-arm64-gnu": "0.1.1"
   }
 }
